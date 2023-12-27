@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/images (1).jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm <span>Chamodya</span><br> From Sri Lanka</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/IMG_20220805_070341-3.jpg" height="350" width="300">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Data scientists are a new breed of analytical data expert who have the technical skills to solve complex problems and the curiosity to explore what problems need to be solved. They're part mathematician, part computer scientist and part trend-spotter.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Advanced Mathemstics</span><br>Calculus, Algebra, Probability and Statistics</li>
+                            <li><span>Data Mining</span><br>Linear regression analysis, Clustering analysis and Anomaly detection</li>
+                            <li><span>Programming</span><br>Machine learning, Deep learning  and AI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Foundation</span><br>A strong foundation in Mathematics, Statistics and Programming</li>
+                            <li><span>Database Interrogation and Analysis tools</span><br> Apache Hadoop, SQL and SAS</li>
+                            <li><span>Cloud Computing Platform</span><br>AWS, Azure and Google Cloud Platform</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Internal Degree</span><br>Bachelor of Science in Computer Science</li>
+                            <li><span>External Degree</span><br>HR Mangement</li>
+                            
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Mining</h2>
+                    <p>Data mining is the process of extracting and discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Predictive analytics</h2>
+                    <p>Prescriptive analytics takes predictive data to the next level.Data science, advanced analytics, and machine learning techniques are key to creating predictive models.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/phone1.jpg">
+                    <div class="layer">
+                        <h3>Studio Showde<br> Sydney - Australia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nobis qui, temporibus molestiae corporis, illo beatae dolorem distinctio in expedita delectus quas eos recusandae facilis voluptatem nam nemo a perferendis.</p>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/phone2.jpg">
+                    <div class="layer">
+                        <h3>Elsetown Cor<br> Kota Baru - Singapore</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nobis qui, temporibus molestiae corporis, illo beatae dolorem distinctio in expedita delectus quas eos recusandae facilis voluptatem nam nemo a perferendis.</p>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/phone3.jpg">
+                    <div class="layer">
+                        <h3>Studio Showde<br>Canberra - Australia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nobis qui, temporibus molestiae corporis, illo beatae dolorem distinctio in expedita delectus quas eos recusandae facilis voluptatem nam nemo a perferendis.</p>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+   <!---------contact-------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+           <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> wichamodya@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i> 0769377651</p>
+            <div class="social-icons">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                
+
+            </div>
+            <a href="image/CHAMODYA.pdf" download class="btn btn2">Download CV</a>
+           </div>
+           <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+           </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Chamoo.<i class="fa-solid fa-heart"></i> Data Scientist.</p>
+    </div>
+   </div>
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+               tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        
+        </script>
+   
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxAI_kIw1L2prNJB3uye-Dyk5oaF16jjg_cJkMbGAv7lLBZjQixfMUhKaaMHZ1DKJ-xnQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            } )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
