@@ -860,6 +860,15 @@ body.works-page #all-works {
 .btn.btn2 {
   display: inline-block;
   background: #1367ac;
+  transition:
+    background 0.5s,
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.contact-left .btn2:hover,
+.contact-right form .btn2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(19, 103, 172, 0.35);
 }
 .contact-right form {
   width: 100%;
